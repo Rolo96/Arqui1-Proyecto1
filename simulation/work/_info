@@ -1,0 +1,189 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0
+vAdder
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 IDlz[:nO><gU>>@iY4iCEa1
+Z3 VCQ`bgz5:_jXfiNL:YDcZ[0
+S1
+Z4 dC:\Users\Bryan\Desktop\Microarquitectura\simulation
+Z5 w1537251343
+Z6 8C:/Users/Bryan/Desktop/Microarquitectura/hdl/Adder.sv
+Z7 FC:/Users/Bryan/Desktop/Microarquitectura/hdl/Adder.sv
+L0 2
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 o-work work -sv -O0
+Z10 n@adder
+Z11 !s100 KmSU[c96a4f:i<dANFS1V2
+Z12 !s105 Adder_sv_unit
+Z13 !s108 1537251348.626000
+Z14 !s107 C:/Users/Bryan/Desktop/Microarquitectura/hdl/Adder.sv|
+Z15 !s90 -reportprogress|300|-work|work|-sv|C:/Users/Bryan/Desktop/Microarquitectura/hdl/Adder.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vAdder_tb
+R1
+Z16 !s100 >Ek6EQ^l[9A:TY@o>A:?n0
+Z17 IemA`38b7ZV;zi>?bW1c>I2
+Z18 V:mXCC3U>cHGiBjB[XmT@C0
+Z19 !s105 Adder_tb_sv_unit
+S1
+R4
+Z20 w1537248169
+Z21 8C:/Users/Bryan/Desktop/Microarquitectura/testbenches/Adder_tb.sv
+Z22 FC:/Users/Bryan/Desktop/Microarquitectura/testbenches/Adder_tb.sv
+L0 1
+R8
+r1
+31
+Z23 !s90 -reportprogress|300|-work|work|-sv|C:/Users/Bryan/Desktop/Microarquitectura/testbenches/Adder_tb.sv|
+R9
+Z24 n@adder_tb
+Z25 !s108 1537251349.709000
+Z26 !s107 C:/Users/Bryan/Desktop/Microarquitectura/testbenches/Adder_tb.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vCentralProcessorUnit
+R1
+Z27 !s100 HmkGl4<=n;Ah8]U8TY5QZ3
+Z28 IlW9;Li_8XgSN=^;BNJk7R1
+Z29 V@hUV0^bgm[[Z<gonUbjL81
+Z30 !s105 CentralProcessorUnit_sv_unit
+S1
+R4
+Z31 w1537246711
+Z32 8C:/Users/Bryan/Desktop/Microarquitectura/hdl/CentralProcessorUnit.sv
+Z33 FC:/Users/Bryan/Desktop/Microarquitectura/hdl/CentralProcessorUnit.sv
+L0 2
+R8
+r1
+31
+Z34 !s90 -reportprogress|300|-work|work|-sv|C:/Users/Bryan/Desktop/Microarquitectura/hdl/CentralProcessorUnit.sv|
+R9
+Z35 n@central@processor@unit
+Z36 !s108 1537251348.924000
+Z37 !s107 C:/Users/Bryan/Desktop/Microarquitectura/hdl/CentralProcessorUnit.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vCentralProcessorUnit_tb
+R1
+Z38 !s100 lWfHmZboTbQ?hB@WjhfA02
+Z39 IYSKKm`zoT?QRiZD=ilza00
+Z40 Vz^;kkzYjCW?A>cFG[^^mb1
+Z41 !s105 CentralProcessorUnit_tb_sv_unit
+S1
+R4
+Z42 w1537249176
+Z43 8C:/Users/Bryan/Desktop/Microarquitectura/testbenches/CentralProcessorUnit_tb.sv
+Z44 FC:/Users/Bryan/Desktop/Microarquitectura/testbenches/CentralProcessorUnit_tb.sv
+L0 2
+R8
+r1
+31
+Z45 !s90 -reportprogress|300|-work|work|-sv|C:/Users/Bryan/Desktop/Microarquitectura/testbenches/CentralProcessorUnit_tb.sv|
+R9
+Z46 n@central@processor@unit_tb
+Z47 !s108 1537251349.910000
+Z48 !s107 C:/Users/Bryan/Desktop/Microarquitectura/testbenches/CentralProcessorUnit_tb.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vDataMemory
+R1
+Z49 !s100 zZ<;?DVQg?T>[89zXfk1>0
+Z50 ILDh10JkK]gJo6^:;`]VoC2
+Z51 VN@]<M1jDDYCGzNe2e[BNI1
+Z52 !s105 DataMemory_sv_unit
+S1
+R4
+Z53 w1537251298
+Z54 8C:\Users\Bryan\Desktop\Microarquitectura\hdl\DataMemory.sv
+Z55 FC:\Users\Bryan\Desktop\Microarquitectura\hdl\DataMemory.sv
+L0 2
+R8
+r1
+31
+Z56 !s90 -reportprogress|300|-work|work|-sv|C:\Users\Bryan\Desktop\Microarquitectura\hdl\DataMemory.sv|
+R9
+Z57 n@data@memory
+Z58 !s108 1537251349.177000
+Z59 !s107 C:\Users\Bryan\Desktop\Microarquitectura\hdl\DataMemory.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vDataMemory_tb
+R1
+Z60 !s100 dSX<CZPonM@V8j`@E1Efd0
+Z61 IUJ<:3@bz2W5?3Lh]l1<802
+Z62 VSXJe:4?_SZPZX7JOaUP_n0
+Z63 !s105 DataMemory_tb_sv_unit
+S1
+R4
+Z64 w1537248995
+Z65 8C:/Users/Bryan/Desktop/Microarquitectura/testbenches/DataMemory_tb.sv
+Z66 FC:/Users/Bryan/Desktop/Microarquitectura/testbenches/DataMemory_tb.sv
+L0 2
+R8
+r1
+31
+Z67 !s90 -reportprogress|300|-work|work|-sv|C:/Users/Bryan/Desktop/Microarquitectura/testbenches/DataMemory_tb.sv|
+R9
+Z68 n@data@memory_tb
+!i10b 1
+!s85 0
+Z69 !s108 1537251350.237000
+Z70 !s107 C:/Users/Bryan/Desktop/Microarquitectura/testbenches/DataMemory_tb.sv|
+!s101 -O0
+vInstructionMemory
+R1
+Z71 !s100 AQA^Rg8=I?ZSDT22eGd<_3
+Z72 IK[4lRZfnH4c3833f4dkWo1
+Z73 VPL_9[0:0?oGON7mc^7bQR0
+Z74 !s105 InstructionMemory_sv_unit
+S1
+R4
+Z75 w1537248016
+Z76 8C:/Users/Bryan/Desktop/Microarquitectura/hdl/InstructionMemory.sv
+Z77 FC:/Users/Bryan/Desktop/Microarquitectura/hdl/InstructionMemory.sv
+L0 2
+R8
+r1
+31
+Z78 !s90 -reportprogress|300|-work|work|-sv|C:/Users/Bryan/Desktop/Microarquitectura/hdl/InstructionMemory.sv|
+R9
+Z79 n@instruction@memory
+Z80 !s108 1537251349.504000
+Z81 !s107 C:/Users/Bryan/Desktop/Microarquitectura/hdl/InstructionMemory.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vInstructionMemory_tb
+R1
+!i10b 1
+Z82 !s100 SbBco=aJ?AfTSF1:Ta<hL3
+Z83 Ib9MKWl@:Fk?dT^KeGYBAB0
+Z84 V<65<`J[9gi_[<C6[SeT0D0
+Z85 !s105 InstructionMemory_tb_sv_unit
+S1
+R4
+Z86 w1537248217
+Z87 8C:/Users/Bryan/Desktop/Microarquitectura/testbenches/InstructionMemory_tb.sv
+Z88 FC:/Users/Bryan/Desktop/Microarquitectura/testbenches/InstructionMemory_tb.sv
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1537251350.469000
+!s107 C:/Users/Bryan/Desktop/Microarquitectura/testbenches/InstructionMemory_tb.sv|
+Z89 !s90 -reportprogress|300|-work|work|-sv|C:/Users/Bryan/Desktop/Microarquitectura/testbenches/InstructionMemory_tb.sv|
+!s101 -O0
+R9
+Z90 n@instruction@memory_tb

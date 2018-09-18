@@ -1,0 +1,57 @@
+C:/Users/Bryan/Desktop/Microarquitectura/testbenches/CentralProcessorUnit_tb.sv {1 {vlog -work work -sv C:/Users/Bryan/Desktop/Microarquitectura/testbenches/CentralProcessorUnit_tb.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CentralProcessorUnit_tb
+
+Top level modules:
+	CentralProcessorUnit_tb
+
+} {} {}} C:/Users/Bryan/Desktop/Microarquitectura/hdl/InstructionMemory.sv {1 {vlog -work work -sv C:/Users/Bryan/Desktop/Microarquitectura/hdl/InstructionMemory.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module InstructionMemory
+
+Top level modules:
+	InstructionMemory
+
+} {} {}} C:/Users/Bryan/Desktop/Microarquitectura/hdl/DataMemory.sv {1 {vlog -work work -sv {C:\Users\Bryan\Desktop\Microarquitectura\hdl\DataMemory.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} C:/Users/Bryan/Desktop/Microarquitectura/testbenches/InstructionMemory_tb.sv {1 {vlog -work work -sv C:/Users/Bryan/Desktop/Microarquitectura/testbenches/InstructionMemory_tb.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module InstructionMemory_tb
+
+Top level modules:
+	InstructionMemory_tb
+
+} {} {}} C:/Users/Bryan/Desktop/Microarquitectura/testbenches/DataMemory_tb.sv {1 {vlog -work work -sv C:/Users/Bryan/Desktop/Microarquitectura/testbenches/DataMemory_tb.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DataMemory_tb
+
+Top level modules:
+	DataMemory_tb
+
+} {} {}} C:/Users/Bryan/Desktop/Microarquitectura/hdl/Adder.sv {1 {vlog -work work -sv C:/Users/Bryan/Desktop/Microarquitectura/hdl/Adder.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} C:/Users/Bryan/Desktop/Microarquitectura/testbenches/Adder_tb.sv {1 {vlog -work work -sv C:/Users/Bryan/Desktop/Microarquitectura/testbenches/Adder_tb.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Adder_tb
+
+Top level modules:
+	Adder_tb
+
+} {} {}} C:/Users/Bryan/Desktop/Microarquitectura/hdl/CentralProcessorUnit.sv {1 {vlog -work work -sv C:/Users/Bryan/Desktop/Microarquitectura/hdl/CentralProcessorUnit.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CentralProcessorUnit
+
+Top level modules:
+	CentralProcessorUnit
+
+} {} {}}
