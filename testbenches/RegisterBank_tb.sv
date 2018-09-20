@@ -1,4 +1,4 @@
-module RegisterBank_tb;
+module RegisterBank_tb();
 	// Inputs
 	bit clk;
 	bit writeEnabled;
