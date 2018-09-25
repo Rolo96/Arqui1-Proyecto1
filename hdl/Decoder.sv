@@ -1,31 +1,33 @@
 `timescale 1ns/1ps
 
 module Decoder( instruction,aluOperation,rd,rn,rm,immediate,conditionFlags,
-		loadStoreSignals,regSrc,cntrlImmExt,cntrlCondFlags,cntrlBranch,cntrlPcSrc,cntrlAluSrc,
+		loadStoreSignals,cntrlRegSrc,cntrlImmExt,cntrlCondFlags,cntrlBranch,cntrlPcSrc,cntrlAluSrc,
 		cntrlRegWrite,cntrlMemWrite,cntrlMemtoReg);
 	
-	input logic [31:0] instruction;
+	input logic [31:0] instruction; //instruccion a decodificar
 	
-	output logic [3:0] aluOperation; //operacion que hace la alu = OpCode
 	output logic [3:0] rd; //registro
 	output logic [3:0] rn; //registro
 	output logic [3:0] rm; //registro
 	output logic [23:0] immediate; //inmediato
 	
-	output logic [3:0] conditionFlags;
+	output logic [3:0] aluOperation; //operacion que hace la alu = OpCode
+	output logic [1:0] cntrlCondFlags; //modificar banderas condicionales
+	output logic [3:0] conditionFlags;  //banderas condicionales
 	output logic [4:0] loadStoreSignals; //bits P-U-B-W-L del load store
-	output logic [1:0] regSrc; //
-	output logic [1:0] cntrlImmExt;
-	output logic cntrlCondFlags; //cambiar banderas condicionales
-	output logic cntrlBranch;
-	output logic cntrlPcSrc;
-	output logic cntrlAluSrc;
-	output logic cntrlRegWrite;
-	output logic cntrlMemWrite;
+	output logic cntrlPcSrc; //Escribir en reg PC
+	output logic cntrlRegWrite; //Escribir en registro
+	output logic cntrlMemWrite; //Escribir en memoria
 	output logic cntrlMemtoReg;
+	output logic cntrlAluSrc; 
+	output logic [1:0] cntrlImmExt; //Tipo ext de signo segun instruccion
+	output logic [1:0] cntrlRegSrc; //
+	output logic cntrlBranch;	
+	//output logic cntrlNoWrite; //si es un CMP, indicar que no escriba en registro
+
 	
 	bit cntrlUseAlu; //si la alu es usada
-	logic cntrlCondFlagsTemp; //
+	logic [1:0] cntrlCondFlagsTemp; //
 	
 	logic [1:0] instrucType;//tipo de instruccion
 	logic [3:0] opCode;//OpCode
@@ -34,6 +36,7 @@ module Decoder( instruction,aluOperation,rd,rn,rm,immediate,conditionFlags,
 	logic [9:0] cntrlSignals; //senales de control
 	
 	//outputs temporales
+	//logic cntrlNoWriteTemp;
 	logic [3:0] aluOperationTemp;
 	logic [23:0] immediateTemp;
 	logic [3:0] rdTemp;
@@ -69,6 +72,7 @@ module Decoder( instruction,aluOperation,rd,rn,rm,immediate,conditionFlags,
 			opCode = instruction[24:21];
 			rnTemp = instruction[19:16];
 			rdTemp = instruction[15:12];
+			//cntrlNoWriteTemp = (opCode == 4'b0100); //si es CMP => 1
 			if(i) begin
 				immediateTemp = instruction[23:0];
 			end else begin
@@ -81,17 +85,18 @@ module Decoder( instruction,aluOperation,rd,rn,rm,immediate,conditionFlags,
 		
 	end
 	
-	assign {regSrc,cntrlImmExt, cntrlAluSrc, cntrlMemtoReg, 
+	assign {cntrlRegSrc,cntrlImmExt, cntrlAluSrc, cntrlMemtoReg, 
 		cntrlRegWrite, cntrlMemWrite, cntrlBranch, cntrlUseAlu} = cntrlSignals;
 		
 	always_ff @(*) begin
-		if(cntrlUseAlu) begin
+		if(cntrlUseAlu) begin //data process
 			aluOperationTemp = opCode;
-			cntrlCondFlagsTemp = s;
+			cntrlCondFlagsTemp[1] = s;              //ADD              //SUBB 
+			cntrlCondFlagsTemp[0] = s & (opCode == 4'b0000 | opCode == 4'b0001);
 		
 		end else begin
 			aluOperationTemp = 3'b0000; //add
-			cntrlCondFlagsTemp = 1'b0;
+			cntrlCondFlagsTemp = 2'b00; //no se modifican las condicionales
 		end	
 	end
 	
@@ -101,9 +106,10 @@ module Decoder( instruction,aluOperation,rd,rn,rm,immediate,conditionFlags,
 	assign rm = rmTemp;
 	assign aluOperation = aluOperationTemp;
 	assign immediate = immediateTemp;
+	//assign cntrlNoWrite = cntrlNoWriteTemp;
 	assign cntrlCondFlags = cntrlCondFlagsTemp;	
 	assign loadStoreSignals = loadStoreSignalsTemp;
-	assign cntrlPcSrc = ((rd==4'b1111) & cntrlRegWrite) | cntrlBranch;
+	assign cntrlPcSrc = ((rd==4'b1111) & cntrlRegWrite) | cntrlBranch; //si es un write a PC o un branch 
 	assign conditionFlags = instruction[31:28];
 	
 

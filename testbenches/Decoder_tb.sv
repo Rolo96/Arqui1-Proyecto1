@@ -24,7 +24,7 @@ module Decoder_tb();
 	logic [4:0] loadStoreSignals; //bits P-U-B-W-L del load store
 	logic [1:0] regSrc; //
 	logic [1:0] cntrlImmExt;
-	logic cntrlCondFlags;
+	logic [1:0] cntrlCondFlags;
 	logic cntrlBranch;
 	logic cntrlPcSrc;
 	logic cntrlAluSrc;
@@ -42,7 +42,7 @@ module Decoder_tb();
 		.conditionFlags(conditionFlags),
 		
 		.loadStoreSignals(loadStoreSignals),
-		.regSrc(regSrc),
+		.cntrlRegSrc(regSrc),
 		.cntrlImmExt(cntrlImmExt),
 		.cntrlCondFlags(cntrlCondFlags),
 		.cntrlBranch(cntrlBranch),
